@@ -1,6 +1,5 @@
 #lang racket
 (require ffi/unsafe) 
-(require ffi/cvector)
 
 (provide native-lib)
 

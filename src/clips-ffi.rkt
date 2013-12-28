@@ -6,7 +6,6 @@
 (provide (all-defined-out))
 
 (require ffi/unsafe) 
-(require ffi/cvector)
 (require racket/runtime-path)
 (require "ffi-utils.rkt")
 (require "data-object.rkt")

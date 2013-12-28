@@ -6,7 +6,6 @@
 (provide (all-defined-out))
 
 (require ffi/unsafe) 
-(require ffi/cvector)
 
 (define-cstruct _dataObject (
   [supplementalInfo _pointer]
