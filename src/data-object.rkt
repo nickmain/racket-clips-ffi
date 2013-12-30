@@ -1,73 +1,63 @@
 #lang racket
 ;----------------------------------------------------------------------------
-; CLIPS DATA_OBJECT structures and functions
+; CLIPS DATA_OBJECT marshaling functions
 ;----------------------------------------------------------------------------
 
 (provide (all-defined-out))
 
 (require ffi/unsafe) 
-
-(define-cstruct _dataObject (
-  [supplementalInfo _pointer]
-  [type  _ushort]
-  [value _pointer]
-  [begin _long]
-  [end   _long]
-  [next  _pointer]))
-
-; dataObject types
-(define FLOAT            0)
-(define INTEGER          1)
-(define SYMBOL           2)
-(define STRING           3)
-(define MULTIFIELD       4)
-(define EXTERNAL_ADDRESS 5)
-(define FACT_ADDRESS     6)
-(define INSTANCE_ADDRESS 7)
-(define INSTANCE_NAME    8)
+(require "clips-structs.rkt")
+(require "clips-functions.rkt")
 
 (define (empty-dataObject)
   (make-dataObject #f 0 #f 0 0 #f))
 
-(define-cstruct _floatHashNode (
-  [next  _floatHashNode-pointer]
-  [count _long]
-  [depth _int]
-  [flags _uint32]
-  [contents _double]))
+; Marshall a scheme value into a dataObject
+(define (value->dataObject env value ptr-dobj)
+  (let ([dobj (ptr-ref ptr-dobj _dataObject)])
+    (cond
+      [(symbol? value)  (set-dataObject-type! dobj SYMBOL)
+                        (set-dataObject-value! dobj (EnvAddSymbol env (symbol->string value)))]
+      [(symbol? value)  (set-dataObject-type! dobj STRING)
+                        (set-dataObject-value! dobj (EnvAddSymbol env value))]
+      [(exact-integer? value) (set-dataObject-type! dobj INTEGER)
+                              (set-dataObject-value! dobj (EnvAddLong env value))]
+      [(real? value)    (set-dataObject-type! dobj FLOAT)
+                        (set-dataObject-value! dobj (EnvAddDouble env value))]
+      [(boolean? value) (value->dataObject env (if value 'TRUE 'FALSE) dobj)]
+      
+      [(vector? value) (let* ([len (vector-length value)]
+                              [mf (EnvCreateMultifield env len)]
+                              [fields (ptr-ref (array-ptr (multifield-fields mf))
+                                               (_array _field len))])
+                         (set-dataObject-type! dobj MULTIFIELD)
+                         (set-dataObject-value! dobj mf)
+                         (set-dataObject-begin! dobj 0)
+                         (set-dataObject-end!   dobj (- len 1))                       
+                         (let loop ([i 0])
+                           (when (< i len)
+                             (value->field env 
+                                           (vector-ref value i)
+                                           (array-ref fields i))
+                             (loop (+ i 1)))))]
+      
+      [(list? value) (value->dataObject env (list->vector value) dobj)]
+      [else (value->dataObject env 'nil dobj)])))
 
-(define-cstruct _integerHashNode (
-  [next  _integerHashNode-pointer]
-  [count _long]
-  [depth _int]
-  [flags _uint32]
-  [contents _llong]))
+; Marshall a scheme value into a multifield field
+(define (value->field env value field)
+  (cond
+    [(symbol? value)  (set-field-type! field SYMBOL)
+                      (set-field-value! field (EnvAddSymbol env (symbol->string value)))]
+    [(symbol? value)  (set-field-type! field STRING)
+                      (set-field-value! field (EnvAddSymbol env value))]
+    [(exact-integer? value) (set-field-type! field INTEGER)
+                            (set-field-value! field (EnvAddLong env value))]
+    [(real? value)    (set-field-type! field FLOAT)
+                      (set-field-value! field (EnvAddDouble env value))]
+    [(boolean? value) (value->field env (if value 'TRUE 'FALSE) field)]
+    [else (value->field env 'nil field)]))    
 
-(define-cstruct _symbolHashNode (
-  [next  _symbolHashNode-pointer]
-  [count _long]
-  [depth _int]
-  [flags _uint32]
-  [contents _string]))
-
-(define-cstruct _externalAddressHashNode (
-  [next  _externalAddressHashNode-pointer]
-  [count _long]
-  [depth _int]
-  [flags _uint32]
-  [externalAddress _pointer]
-  [type  _ushort]))
-
-(define-cstruct _field (
-  [type  _ushort]
-  [value _pointer]))
-
-(define-cstruct _multifield (
-  [busyCount _uint]
-  [depth     _short]
-  [length    _long]
-  [next      _multifield-pointer]
-  [fields    (_array _field 1)]))
 
 ; marshal a dataObject to a scheme value
 (define (dataObject->value dobj)
@@ -98,7 +88,11 @@
   (case type
     [(0)   (floatHashNode-contents   (ptr-ref value-ptr _floatHashNode))]
     [(1)   (integerHashNode-contents (ptr-ref value-ptr _integerHashNode))]
-    [(2)   (string->symbol (symbolHashNode-contents (ptr-ref value-ptr _symbolHashNode)))]
+    [(2)   (let ([sym (string->symbol (symbolHashNode-contents (ptr-ref value-ptr _symbolHashNode)))])
+             (case sym
+               [(TRUE) #t]
+               [(FALSE) #f]
+               [else sym]))]
     [(3 8) (symbolHashNode-contents  (ptr-ref value-ptr _symbolHashNode))]
     [(4)   (multifield->vector value-ptr begin end)]
     [(5)   (externalAddressHashNode-externalAddress (ptr-ref value-ptr _externalAddressHashNode))]
