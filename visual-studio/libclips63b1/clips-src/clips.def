@@ -1,0 +1,17 @@
+LIBRARY libclips63b1
+EXPORTS
+    CreateEnvironment
+	DestroyEnvironment
+    EnvClear
+    EnvReset
+    EnvEval
+    EnvRun
+    EnvLoad
+    EnvAssertString
+    EnvDefineFunction2
+    EnvRtnArgCount
+    EnvRtnUnknown
+    EnvAddSymbol
+    EnvAddLong
+    EnvAddDouble
+    EnvCreateMultifield

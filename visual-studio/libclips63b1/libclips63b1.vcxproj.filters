@@ -1,0 +1,1067 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libclips63b1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\agenda.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\analysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\argacces.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\bload.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\bmathfun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\bsave.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\classcom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\classexm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\classfun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\classinf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\classini.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\classpsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\clips.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\clsltpsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\cmptblty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\commline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\conscomp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\constant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\constrct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\constrnt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\crstrtgy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\cstrcbin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\cstrccmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\cstrccom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\cstrcpsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\cstrnbin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\cstrnchk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\cstrncmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\cstrnops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\cstrnpsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\cstrnutl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\default.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\defins.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\developr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\dffctbin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\dffctbsc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\dffctcmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\dffctdef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\dffctpsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\dffnxbin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\dffnxcmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\dffnxexe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\dffnxfun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\dffnxpsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\dfinsbin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\dfinscmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\drive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\ed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\emathfun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\envrnmnt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\evaluatn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\expressn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\exprnbin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\exprnops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\exprnpsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\extnfunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\factbin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\factbld.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\factcmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\factcom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\factfun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\factgen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\facthsh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\factlhs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\factmch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\factmngr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\factprt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\factqpsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\factqury.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\factrete.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\factrhs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\filecom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\filertr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\generate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\genrcbin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\genrccmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\genrccom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\genrcexe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\genrcfun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\genrcpsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\globlbin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\globlbsc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\globlcmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\globlcom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\globldef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\globlpsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\immthpsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\incrrset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\inherpsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\inscom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\insfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\insfun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\insmngr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\insmoddp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\insmult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\inspsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\insquery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\insqypsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\iofun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\lgcldpnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\match.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\memalloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\miscfun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\modulbin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\modulbsc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\modulcmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\moduldef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\modulpsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\modulutl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\msgcom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\msgfun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\msgpass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\msgpsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\multifld.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\multifun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\network.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\objbin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\objcmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\objrtbin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\objrtbld.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\objrtcmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\objrtfnx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\objrtgen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\objrtmch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\parsefun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\pattern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\pprint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\prccode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\prcdrfun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\prcdrpsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\prdctfun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\prntutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\proflfun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\reorder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\reteutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\retract.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\router.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\rulebin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\rulebld.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\rulebsc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\rulecmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\rulecom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\rulecstr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\ruledef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\ruledlt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\rulelhs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\rulepsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\scanner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\setup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\sortfun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\strngfun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\strngrtr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\symblbin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\symblcmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\symbol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\sysdep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\textpro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\tmpltbin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\tmpltbsc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\tmpltcmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\tmpltdef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\tmpltfun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\tmpltlhs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\tmpltpsr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\tmpltrhs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\tmpltutl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\userdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\usrsetup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clips-src\watch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libclips63b1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\agenda.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\analysis.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\argacces.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\bload.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\bmathfun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\bsave.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\classcom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\classexm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\classfun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\classinf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\classini.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\classpsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\clsltpsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\commline.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\conscomp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\constrct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\constrnt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\crstrtgy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\cstrcbin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\cstrccom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\cstrcpsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\cstrnbin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\cstrnchk.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\cstrncmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\cstrnops.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\cstrnpsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\cstrnutl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\default.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\defins.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\developr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\dffctbin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\dffctbsc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\dffctcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\dffctdef.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\dffctpsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\dffnxbin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\dffnxcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\dffnxexe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\dffnxfun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\dffnxpsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\dfinsbin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\dfinscmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\drive.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\edbasic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\edmain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\edmisc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\edstruct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\edterm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\emathfun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\engine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\envrnmnt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\evaluatn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\expressn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\exprnbin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\exprnops.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\exprnpsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\extnfunc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\factbin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\factbld.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\factcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\factcom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\factfun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\factgen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\facthsh.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\factlhs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\factmch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\factmngr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\factprt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\factqpsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\factqury.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\factrete.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\factrhs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\filecom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\filertr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\generate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\genrcbin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\genrccmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\genrccom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\genrcexe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\genrcfun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\genrcpsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\globlbin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\globlbsc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\globlcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\globlcom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\globldef.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\globlpsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\immthpsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\incrrset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\inherpsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\inscom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\insfile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\insfun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\insmngr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\insmoddp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\insmult.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\inspsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\insquery.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\insqypsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\iofun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\lgcldpnd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\memalloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\miscfun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\modulbin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\modulbsc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\modulcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\moduldef.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\modulpsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\modulutl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\msgcom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\msgfun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\msgpass.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\msgpsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\multifld.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\multifun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\objbin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\objcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\objrtbin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\objrtbld.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\objrtcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\objrtfnx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\objrtgen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\objrtmch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\parsefun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\pattern.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\pprint.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\prccode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\prcdrfun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\prcdrpsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\prdctfun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\prntutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\proflfun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\reorder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\reteutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\retract.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\router.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\rulebin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\rulebld.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\rulebsc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\rulecmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\rulecom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\rulecstr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\ruledef.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\ruledlt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\rulelhs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\rulepsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\scanner.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\sortfun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\strngfun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\strngrtr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\symblbin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\symblcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\symbol.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\sysdep.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\textpro.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\tmpltbin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\tmpltbsc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\tmpltcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\tmpltdef.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\tmpltfun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\tmpltlhs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\tmpltpsr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\tmpltrhs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\tmpltutl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\userdata.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\userfunctions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\utility.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clips-src\watch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clips-src\clips.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -21,5 +21,8 @@ DerivedData
 #CocoaPods
 Pods
 
+#Visual Studio
+Debug
+
 #Racket
 compiled

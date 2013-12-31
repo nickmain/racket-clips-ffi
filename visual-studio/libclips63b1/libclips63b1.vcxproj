@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4C31C6A9-91D4-4CE1-82C0-A2744FABDB7D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libclips63b1</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBCLIPS63B1_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>clips-src/clips.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBCLIPS63B1_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>clips-src/clips.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="clips-src\agenda.h" />
+    <ClInclude Include="clips-src\analysis.h" />
+    <ClInclude Include="clips-src\argacces.h" />
+    <ClInclude Include="clips-src\bload.h" />
+    <ClInclude Include="clips-src\bmathfun.h" />
+    <ClInclude Include="clips-src\bsave.h" />
+    <ClInclude Include="clips-src\classcom.h" />
+    <ClInclude Include="clips-src\classexm.h" />
+    <ClInclude Include="clips-src\classfun.h" />
+    <ClInclude Include="clips-src\classinf.h" />
+    <ClInclude Include="clips-src\classini.h" />
+    <ClInclude Include="clips-src\classpsr.h" />
+    <ClInclude Include="clips-src\clips.h" />
+    <ClInclude Include="clips-src\clsltpsr.h" />
+    <ClInclude Include="clips-src\cmptblty.h" />
+    <ClInclude Include="clips-src\commline.h" />
+    <ClInclude Include="clips-src\conscomp.h" />
+    <ClInclude Include="clips-src\constant.h" />
+    <ClInclude Include="clips-src\constrct.h" />
+    <ClInclude Include="clips-src\constrnt.h" />
+    <ClInclude Include="clips-src\crstrtgy.h" />
+    <ClInclude Include="clips-src\cstrcbin.h" />
+    <ClInclude Include="clips-src\cstrccmp.h" />
+    <ClInclude Include="clips-src\cstrccom.h" />
+    <ClInclude Include="clips-src\cstrcpsr.h" />
+    <ClInclude Include="clips-src\cstrnbin.h" />
+    <ClInclude Include="clips-src\cstrnchk.h" />
+    <ClInclude Include="clips-src\cstrncmp.h" />
+    <ClInclude Include="clips-src\cstrnops.h" />
+    <ClInclude Include="clips-src\cstrnpsr.h" />
+    <ClInclude Include="clips-src\cstrnutl.h" />
+    <ClInclude Include="clips-src\default.h" />
+    <ClInclude Include="clips-src\defins.h" />
+    <ClInclude Include="clips-src\developr.h" />
+    <ClInclude Include="clips-src\dffctbin.h" />
+    <ClInclude Include="clips-src\dffctbsc.h" />
+    <ClInclude Include="clips-src\dffctcmp.h" />
+    <ClInclude Include="clips-src\dffctdef.h" />
+    <ClInclude Include="clips-src\dffctpsr.h" />
+    <ClInclude Include="clips-src\dffnxbin.h" />
+    <ClInclude Include="clips-src\dffnxcmp.h" />
+    <ClInclude Include="clips-src\dffnxexe.h" />
+    <ClInclude Include="clips-src\dffnxfun.h" />
+    <ClInclude Include="clips-src\dffnxpsr.h" />
+    <ClInclude Include="clips-src\dfinsbin.h" />
+    <ClInclude Include="clips-src\dfinscmp.h" />
+    <ClInclude Include="clips-src\drive.h" />
+    <ClInclude Include="clips-src\ed.h" />
+    <ClInclude Include="clips-src\emathfun.h" />
+    <ClInclude Include="clips-src\engine.h" />
+    <ClInclude Include="clips-src\envrnmnt.h" />
+    <ClInclude Include="clips-src\evaluatn.h" />
+    <ClInclude Include="clips-src\expressn.h" />
+    <ClInclude Include="clips-src\exprnbin.h" />
+    <ClInclude Include="clips-src\exprnops.h" />
+    <ClInclude Include="clips-src\exprnpsr.h" />
+    <ClInclude Include="clips-src\extnfunc.h" />
+    <ClInclude Include="clips-src\factbin.h" />
+    <ClInclude Include="clips-src\factbld.h" />
+    <ClInclude Include="clips-src\factcmp.h" />
+    <ClInclude Include="clips-src\factcom.h" />
+    <ClInclude Include="clips-src\factfun.h" />
+    <ClInclude Include="clips-src\factgen.h" />
+    <ClInclude Include="clips-src\facthsh.h" />
+    <ClInclude Include="clips-src\factlhs.h" />
+    <ClInclude Include="clips-src\factmch.h" />
+    <ClInclude Include="clips-src\factmngr.h" />
+    <ClInclude Include="clips-src\factprt.h" />
+    <ClInclude Include="clips-src\factqpsr.h" />
+    <ClInclude Include="clips-src\factqury.h" />
+    <ClInclude Include="clips-src\factrete.h" />
+    <ClInclude Include="clips-src\factrhs.h" />
+    <ClInclude Include="clips-src\filecom.h" />
+    <ClInclude Include="clips-src\filertr.h" />
+    <ClInclude Include="clips-src\generate.h" />
+    <ClInclude Include="clips-src\genrcbin.h" />
+    <ClInclude Include="clips-src\genrccmp.h" />
+    <ClInclude Include="clips-src\genrccom.h" />
+    <ClInclude Include="clips-src\genrcexe.h" />
+    <ClInclude Include="clips-src\genrcfun.h" />
+    <ClInclude Include="clips-src\genrcpsr.h" />
+    <ClInclude Include="clips-src\globlbin.h" />
+    <ClInclude Include="clips-src\globlbsc.h" />
+    <ClInclude Include="clips-src\globlcmp.h" />
+    <ClInclude Include="clips-src\globlcom.h" />
+    <ClInclude Include="clips-src\globldef.h" />
+    <ClInclude Include="clips-src\globlpsr.h" />
+    <ClInclude Include="clips-src\immthpsr.h" />
+    <ClInclude Include="clips-src\incrrset.h" />
+    <ClInclude Include="clips-src\inherpsr.h" />
+    <ClInclude Include="clips-src\inscom.h" />
+    <ClInclude Include="clips-src\insfile.h" />
+    <ClInclude Include="clips-src\insfun.h" />
+    <ClInclude Include="clips-src\insmngr.h" />
+    <ClInclude Include="clips-src\insmoddp.h" />
+    <ClInclude Include="clips-src\insmult.h" />
+    <ClInclude Include="clips-src\inspsr.h" />
+    <ClInclude Include="clips-src\insquery.h" />
+    <ClInclude Include="clips-src\insqypsr.h" />
+    <ClInclude Include="clips-src\iofun.h" />
+    <ClInclude Include="clips-src\lgcldpnd.h" />
+    <ClInclude Include="clips-src\match.h" />
+    <ClInclude Include="clips-src\memalloc.h" />
+    <ClInclude Include="clips-src\miscfun.h" />
+    <ClInclude Include="clips-src\modulbin.h" />
+    <ClInclude Include="clips-src\modulbsc.h" />
+    <ClInclude Include="clips-src\modulcmp.h" />
+    <ClInclude Include="clips-src\moduldef.h" />
+    <ClInclude Include="clips-src\modulpsr.h" />
+    <ClInclude Include="clips-src\modulutl.h" />
+    <ClInclude Include="clips-src\msgcom.h" />
+    <ClInclude Include="clips-src\msgfun.h" />
+    <ClInclude Include="clips-src\msgpass.h" />
+    <ClInclude Include="clips-src\msgpsr.h" />
+    <ClInclude Include="clips-src\multifld.h" />
+    <ClInclude Include="clips-src\multifun.h" />
+    <ClInclude Include="clips-src\network.h" />
+    <ClInclude Include="clips-src\objbin.h" />
+    <ClInclude Include="clips-src\objcmp.h" />
+    <ClInclude Include="clips-src\object.h" />
+    <ClInclude Include="clips-src\objrtbin.h" />
+    <ClInclude Include="clips-src\objrtbld.h" />
+    <ClInclude Include="clips-src\objrtcmp.h" />
+    <ClInclude Include="clips-src\objrtfnx.h" />
+    <ClInclude Include="clips-src\objrtgen.h" />
+    <ClInclude Include="clips-src\objrtmch.h" />
+    <ClInclude Include="clips-src\parsefun.h" />
+    <ClInclude Include="clips-src\pattern.h" />
+    <ClInclude Include="clips-src\pprint.h" />
+    <ClInclude Include="clips-src\prccode.h" />
+    <ClInclude Include="clips-src\prcdrfun.h" />
+    <ClInclude Include="clips-src\prcdrpsr.h" />
+    <ClInclude Include="clips-src\prdctfun.h" />
+    <ClInclude Include="clips-src\prntutil.h" />
+    <ClInclude Include="clips-src\proflfun.h" />
+    <ClInclude Include="clips-src\reorder.h" />
+    <ClInclude Include="clips-src\reteutil.h" />
+    <ClInclude Include="clips-src\retract.h" />
+    <ClInclude Include="clips-src\router.h" />
+    <ClInclude Include="clips-src\rulebin.h" />
+    <ClInclude Include="clips-src\rulebld.h" />
+    <ClInclude Include="clips-src\rulebsc.h" />
+    <ClInclude Include="clips-src\rulecmp.h" />
+    <ClInclude Include="clips-src\rulecom.h" />
+    <ClInclude Include="clips-src\rulecstr.h" />
+    <ClInclude Include="clips-src\ruledef.h" />
+    <ClInclude Include="clips-src\ruledlt.h" />
+    <ClInclude Include="clips-src\rulelhs.h" />
+    <ClInclude Include="clips-src\rulepsr.h" />
+    <ClInclude Include="clips-src\scanner.h" />
+    <ClInclude Include="clips-src\setup.h" />
+    <ClInclude Include="clips-src\sortfun.h" />
+    <ClInclude Include="clips-src\strngfun.h" />
+    <ClInclude Include="clips-src\strngrtr.h" />
+    <ClInclude Include="clips-src\symblbin.h" />
+    <ClInclude Include="clips-src\symblcmp.h" />
+    <ClInclude Include="clips-src\symbol.h" />
+    <ClInclude Include="clips-src\sysdep.h" />
+    <ClInclude Include="clips-src\textpro.h" />
+    <ClInclude Include="clips-src\tmpltbin.h" />
+    <ClInclude Include="clips-src\tmpltbsc.h" />
+    <ClInclude Include="clips-src\tmpltcmp.h" />
+    <ClInclude Include="clips-src\tmpltdef.h" />
+    <ClInclude Include="clips-src\tmpltfun.h" />
+    <ClInclude Include="clips-src\tmpltlhs.h" />
+    <ClInclude Include="clips-src\tmpltpsr.h" />
+    <ClInclude Include="clips-src\tmpltrhs.h" />
+    <ClInclude Include="clips-src\tmpltutl.h" />
+    <ClInclude Include="clips-src\userdata.h" />
+    <ClInclude Include="clips-src\usrsetup.h" />
+    <ClInclude Include="clips-src\utility.h" />
+    <ClInclude Include="clips-src\watch.h" />
+    <ClInclude Include="libclips63b1.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="clips-src\agenda.c" />
+    <ClCompile Include="clips-src\analysis.c" />
+    <ClCompile Include="clips-src\argacces.c" />
+    <ClCompile Include="clips-src\bload.c" />
+    <ClCompile Include="clips-src\bmathfun.c" />
+    <ClCompile Include="clips-src\bsave.c" />
+    <ClCompile Include="clips-src\classcom.c" />
+    <ClCompile Include="clips-src\classexm.c" />
+    <ClCompile Include="clips-src\classfun.c" />
+    <ClCompile Include="clips-src\classinf.c" />
+    <ClCompile Include="clips-src\classini.c" />
+    <ClCompile Include="clips-src\classpsr.c" />
+    <ClCompile Include="clips-src\clsltpsr.c" />
+    <ClCompile Include="clips-src\commline.c" />
+    <ClCompile Include="clips-src\conscomp.c" />
+    <ClCompile Include="clips-src\constrct.c" />
+    <ClCompile Include="clips-src\constrnt.c" />
+    <ClCompile Include="clips-src\crstrtgy.c" />
+    <ClCompile Include="clips-src\cstrcbin.c" />
+    <ClCompile Include="clips-src\cstrccom.c" />
+    <ClCompile Include="clips-src\cstrcpsr.c" />
+    <ClCompile Include="clips-src\cstrnbin.c" />
+    <ClCompile Include="clips-src\cstrnchk.c" />
+    <ClCompile Include="clips-src\cstrncmp.c" />
+    <ClCompile Include="clips-src\cstrnops.c" />
+    <ClCompile Include="clips-src\cstrnpsr.c" />
+    <ClCompile Include="clips-src\cstrnutl.c" />
+    <ClCompile Include="clips-src\default.c" />
+    <ClCompile Include="clips-src\defins.c" />
+    <ClCompile Include="clips-src\developr.c" />
+    <ClCompile Include="clips-src\dffctbin.c" />
+    <ClCompile Include="clips-src\dffctbsc.c" />
+    <ClCompile Include="clips-src\dffctcmp.c" />
+    <ClCompile Include="clips-src\dffctdef.c" />
+    <ClCompile Include="clips-src\dffctpsr.c" />
+    <ClCompile Include="clips-src\dffnxbin.c" />
+    <ClCompile Include="clips-src\dffnxcmp.c" />
+    <ClCompile Include="clips-src\dffnxexe.c" />
+    <ClCompile Include="clips-src\dffnxfun.c" />
+    <ClCompile Include="clips-src\dffnxpsr.c" />
+    <ClCompile Include="clips-src\dfinsbin.c" />
+    <ClCompile Include="clips-src\dfinscmp.c" />
+    <ClCompile Include="clips-src\drive.c" />
+    <ClCompile Include="clips-src\edbasic.c" />
+    <ClCompile Include="clips-src\edmain.c" />
+    <ClCompile Include="clips-src\edmisc.c" />
+    <ClCompile Include="clips-src\edstruct.c" />
+    <ClCompile Include="clips-src\edterm.c" />
+    <ClCompile Include="clips-src\emathfun.c" />
+    <ClCompile Include="clips-src\engine.c" />
+    <ClCompile Include="clips-src\envrnmnt.c" />
+    <ClCompile Include="clips-src\evaluatn.c" />
+    <ClCompile Include="clips-src\expressn.c" />
+    <ClCompile Include="clips-src\exprnbin.c" />
+    <ClCompile Include="clips-src\exprnops.c" />
+    <ClCompile Include="clips-src\exprnpsr.c" />
+    <ClCompile Include="clips-src\extnfunc.c" />
+    <ClCompile Include="clips-src\factbin.c" />
+    <ClCompile Include="clips-src\factbld.c" />
+    <ClCompile Include="clips-src\factcmp.c" />
+    <ClCompile Include="clips-src\factcom.c" />
+    <ClCompile Include="clips-src\factfun.c" />
+    <ClCompile Include="clips-src\factgen.c" />
+    <ClCompile Include="clips-src\facthsh.c" />
+    <ClCompile Include="clips-src\factlhs.c" />
+    <ClCompile Include="clips-src\factmch.c" />
+    <ClCompile Include="clips-src\factmngr.c" />
+    <ClCompile Include="clips-src\factprt.c" />
+    <ClCompile Include="clips-src\factqpsr.c" />
+    <ClCompile Include="clips-src\factqury.c" />
+    <ClCompile Include="clips-src\factrete.c" />
+    <ClCompile Include="clips-src\factrhs.c" />
+    <ClCompile Include="clips-src\filecom.c" />
+    <ClCompile Include="clips-src\filertr.c" />
+    <ClCompile Include="clips-src\generate.c" />
+    <ClCompile Include="clips-src\genrcbin.c" />
+    <ClCompile Include="clips-src\genrccmp.c" />
+    <ClCompile Include="clips-src\genrccom.c" />
+    <ClCompile Include="clips-src\genrcexe.c" />
+    <ClCompile Include="clips-src\genrcfun.c" />
+    <ClCompile Include="clips-src\genrcpsr.c" />
+    <ClCompile Include="clips-src\globlbin.c" />
+    <ClCompile Include="clips-src\globlbsc.c" />
+    <ClCompile Include="clips-src\globlcmp.c" />
+    <ClCompile Include="clips-src\globlcom.c" />
+    <ClCompile Include="clips-src\globldef.c" />
+    <ClCompile Include="clips-src\globlpsr.c" />
+    <ClCompile Include="clips-src\immthpsr.c" />
+    <ClCompile Include="clips-src\incrrset.c" />
+    <ClCompile Include="clips-src\inherpsr.c" />
+    <ClCompile Include="clips-src\inscom.c" />
+    <ClCompile Include="clips-src\insfile.c" />
+    <ClCompile Include="clips-src\insfun.c" />
+    <ClCompile Include="clips-src\insmngr.c" />
+    <ClCompile Include="clips-src\insmoddp.c" />
+    <ClCompile Include="clips-src\insmult.c" />
+    <ClCompile Include="clips-src\inspsr.c" />
+    <ClCompile Include="clips-src\insquery.c" />
+    <ClCompile Include="clips-src\insqypsr.c" />
+    <ClCompile Include="clips-src\iofun.c" />
+    <ClCompile Include="clips-src\lgcldpnd.c" />
+    <ClCompile Include="clips-src\memalloc.c" />
+    <ClCompile Include="clips-src\miscfun.c" />
+    <ClCompile Include="clips-src\modulbin.c" />
+    <ClCompile Include="clips-src\modulbsc.c" />
+    <ClCompile Include="clips-src\modulcmp.c" />
+    <ClCompile Include="clips-src\moduldef.c" />
+    <ClCompile Include="clips-src\modulpsr.c" />
+    <ClCompile Include="clips-src\modulutl.c" />
+    <ClCompile Include="clips-src\msgcom.c" />
+    <ClCompile Include="clips-src\msgfun.c" />
+    <ClCompile Include="clips-src\msgpass.c" />
+    <ClCompile Include="clips-src\msgpsr.c" />
+    <ClCompile Include="clips-src\multifld.c" />
+    <ClCompile Include="clips-src\multifun.c" />
+    <ClCompile Include="clips-src\objbin.c" />
+    <ClCompile Include="clips-src\objcmp.c" />
+    <ClCompile Include="clips-src\objrtbin.c" />
+    <ClCompile Include="clips-src\objrtbld.c" />
+    <ClCompile Include="clips-src\objrtcmp.c" />
+    <ClCompile Include="clips-src\objrtfnx.c" />
+    <ClCompile Include="clips-src\objrtgen.c" />
+    <ClCompile Include="clips-src\objrtmch.c" />
+    <ClCompile Include="clips-src\parsefun.c" />
+    <ClCompile Include="clips-src\pattern.c" />
+    <ClCompile Include="clips-src\pprint.c" />
+    <ClCompile Include="clips-src\prccode.c" />
+    <ClCompile Include="clips-src\prcdrfun.c" />
+    <ClCompile Include="clips-src\prcdrpsr.c" />
+    <ClCompile Include="clips-src\prdctfun.c" />
+    <ClCompile Include="clips-src\prntutil.c" />
+    <ClCompile Include="clips-src\proflfun.c" />
+    <ClCompile Include="clips-src\reorder.c" />
+    <ClCompile Include="clips-src\reteutil.c" />
+    <ClCompile Include="clips-src\retract.c" />
+    <ClCompile Include="clips-src\router.c" />
+    <ClCompile Include="clips-src\rulebin.c" />
+    <ClCompile Include="clips-src\rulebld.c" />
+    <ClCompile Include="clips-src\rulebsc.c" />
+    <ClCompile Include="clips-src\rulecmp.c" />
+    <ClCompile Include="clips-src\rulecom.c" />
+    <ClCompile Include="clips-src\rulecstr.c" />
+    <ClCompile Include="clips-src\ruledef.c" />
+    <ClCompile Include="clips-src\ruledlt.c" />
+    <ClCompile Include="clips-src\rulelhs.c" />
+    <ClCompile Include="clips-src\rulepsr.c" />
+    <ClCompile Include="clips-src\scanner.c" />
+    <ClCompile Include="clips-src\sortfun.c" />
+    <ClCompile Include="clips-src\strngfun.c" />
+    <ClCompile Include="clips-src\strngrtr.c" />
+    <ClCompile Include="clips-src\symblbin.c" />
+    <ClCompile Include="clips-src\symblcmp.c" />
+    <ClCompile Include="clips-src\symbol.c" />
+    <ClCompile Include="clips-src\sysdep.c" />
+    <ClCompile Include="clips-src\textpro.c" />
+    <ClCompile Include="clips-src\tmpltbin.c" />
+    <ClCompile Include="clips-src\tmpltbsc.c" />
+    <ClCompile Include="clips-src\tmpltcmp.c" />
+    <ClCompile Include="clips-src\tmpltdef.c" />
+    <ClCompile Include="clips-src\tmpltfun.c" />
+    <ClCompile Include="clips-src\tmpltlhs.c" />
+    <ClCompile Include="clips-src\tmpltpsr.c" />
+    <ClCompile Include="clips-src\tmpltrhs.c" />
+    <ClCompile Include="clips-src\tmpltutl.c" />
+    <ClCompile Include="clips-src\userdata.c" />
+    <ClCompile Include="clips-src\userfunctions.c" />
+    <ClCompile Include="clips-src\utility.c" />
+    <ClCompile Include="clips-src\watch.c" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="libclips63b1.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clips-src\clips.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
